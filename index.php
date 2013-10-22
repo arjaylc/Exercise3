@@ -32,7 +32,7 @@ $pwd = "26759141";
 $db = "rj1";
 // Connect to database.
 try {
-    $conn = = mysqli_connect('ap-cdbr-azure-east-b.cloudapp.net', 'b90e7654391dcc', '26759141', 'rj1');
+    $conn  = mysqli_connect('ap-cdbr-azure-east-b.cloudapp.net', 'b90e7654391dcc', '26759141', 'rj1');
 			mysqli_set_charset($this->databaseConnection, 'utf8');
 }
 catch(Exception $e){
