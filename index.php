@@ -32,8 +32,8 @@ $pwd = "26759141";
 $db = "rj1";
 // Connect to database.
 try {
-    $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
-    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    $conn = = mysqli_connect('ap-cdbr-azure-east-b.cloudapp.net', 'b90e7654391dcc', '26759141', 'rj1');
+			mysqli_set_charset($this->databaseConnection, 'utf8');
 }
 catch(Exception $e){
     die(var_dump($e));
